@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chilling Cafe by Tooplate</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+<!--
+Tooplate 2118 Chilling Cafe
+https://www.tooplate.com/view/2118-chilling-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        
+        <h1 class="tm-page-header">Study with Me</h1>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Coffee Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Study Room Availability </h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th>People in Room</th>
+                <th>Table?</th>
+                <th>Whiteboards?</th>
+                <th>Computers</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Room 1</td>
+                <td>2</td>
+                <td>Y</td>
+                <td>Y</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Room 2</td>
+                <td>7</td>
+                <td>N</td>
+                <td>Y</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Room 3</td>
+                <td>2</td>
+                <td>Y</td>
+                <td>N</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Room 4</td>
+                <td>12</td>
+                <td>Y</td>
+                <td>Y</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Room 5</td>
+                <td>1</td>
+                <td>N</td>
+                <td>N</td>
+                <td>0</td>
+              </tr>
+          
+            </table>
+          </div>
+        </section>
+
+      
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
